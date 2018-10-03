@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class AppComponent{
+export class TestService {
 
-  public val1:number;
+  constructor() { }
+
+  add(a,b){
+    return a + b;
+  }
+  
   public rta:Array<string>;
-
-  public operacion(n:number) {
+  operacion(n:number) {
   	var
   		values = [1, 5, 10, 50, 100, 500, 1000],
   		letras = ['I', 'V', 'X', 'L', 'C', 'D', 'M'],

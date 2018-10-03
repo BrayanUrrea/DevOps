@@ -2,9 +2,9 @@
 
   <h1>Convertidor De Numeros Romanos</h1>
   <br>
-  <input type="number" class="form-control"placeholder="Ingrese el número a convertir" id="val1" [(ngModel)] = "val1">
+  <input type="number" class="form-control" placeholder="Ingrese el número a convertir" id="val1" [(ngModel)] = "val1">
   <br>
-  <button class="btn btn-primary" (click)="operacion()">Convertir</button>
+  <button class="btn btn-primary" [(ngModel)] = "val1" (click)="operacion(val1)">  Convertir</button>
   <h3>Número Romano</h3>
   <h3 *ngFor="let rta of rta">{{rta}}</h3>
 </div>
