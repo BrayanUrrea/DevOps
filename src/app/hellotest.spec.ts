@@ -15,12 +15,12 @@ describe('hellotest', ()=>{
     notExpected = '';
   });
 
-  it('mirar si es igual',
+  xit('mirar si es igual',
     ()=> expect('hello').toBe(expected));
 
-  it('mirar si no es igual',
+  xit('mirar si no es igual',
     ()=> expect('hello').not.toBe(notExpected));
 
-  it('mirar si empieza por he',
+  xit('mirar si empieza por he',
     ()=> expect('hello').toMatch(expectMatch));
 });

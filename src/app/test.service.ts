@@ -7,10 +7,10 @@ export class TestService {
 
   constructor() { }
 
-  add(a,b){
+  /*add(a,b){
     return a + b;
-  }
-  
+  }*/
+
   public rta:Array<string>;
   operacion(n:number) {
   	var
